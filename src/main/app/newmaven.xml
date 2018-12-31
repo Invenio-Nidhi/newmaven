@@ -12,5 +12,6 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
     <flow name="newmavenFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/http" doc:name="HTTP"/>
         <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+		<logger message="Shub" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
